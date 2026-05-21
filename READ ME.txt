@@ -1,0 +1,20 @@
+Controls:
+
+Up Arrow	= Move up
+Down Arrow	= Move down
+Left Arrow	= Move left
+Right Arrow 	= Move right
+
+Space Bar	= Interact/Select
+
+Esc		= Pause/Menu/Back
+
+R		= Resets player to map entrance to prevent soft lock.
+
+
+(Debug shortcuts)
+
+R = Reset to entrance
+
+B = Teleport to dungeon1 map
+N = Teleport to dungeon2 map

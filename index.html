@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doom 'n' Gloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Game Container -->
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="640" height="480"></canvas>
+
+        <div id="dialogueBox"></div>
+
+        <div id="menuBox">
+            <div class="menu-option">Items</div>
+            <div class="menu-option">Equipment</div>
+            <div class="menu-option">Stats</div>
+            <div class="menu-option">Save</div>
+            <div class="menu-option">Exit</div>
+        </div>
+
+        <div id="itemsBox" style="display:none" class="ui-box"></div>
+        <div id="equipmentBox" style="display:none" class="ui-box"></div>
+        <div id="shopBox" class="ui-box" style="display:none"></div>
+    </div>
+
+    <!-- Battle Screen -->
+    <div id="battleScreen" style="display:none;">
+        <div id="battleBackground"></div>
+
+        <div id="battleSprites">
+            <canvas id="battleCanvas" width="320" height="180"></canvas>
+        </div>
+
+        <div id="battleUI">
+            <div id="battleMenu">
+                <div class="battle-option selected">Attack</div>
+                <div class="battle-option">Magic (6 MP)</div>
+                <div class="battle-option">Item</div>
+                <div class="battle-option">Run</div>
+            </div>
+
+            <div id="battleStats">
+                <div id="playerStats"></div>
+                <div id="enemyStats"></div>
+            </div>
+
+            <div id="battleMessage"></div>
+        </div>
+    </div>
+
+    <!-- Stats Box -->
+    <div id="statsBox" class="menuBox">
+        <div id="statsContent"></div>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="mainMenu" style="display:block;">
+        <div id="mainMenuBox">
+            <div class="menu-option selected">New Game</div>
+            <div class="menu-option">Load Game</div>
+            <div class="menu-option">Delete Save</div>
+            <div class="menu-option">Exit</div>
+        </div>
+    </div>
+
+    <!-- Slot Selection Menu -->
+    <div id="slotMenu" class="ui-box" style="display:none;">
+        <div id="slotMenuTitle">Select Slot</div>
+        <div class="slot-option selected">Slot 1</div>
+        <div class="slot-option">Slot 2</div>
+        <div class="slot-option">Slot 3</div>
+        <div class="slot-option">Back</div>
+    </div>
+
+    <!-- Include the game scripts -->
+    <script src="items.js"></script>
+    <script src="combat.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>
